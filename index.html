@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darab Bakshi - Creative Professional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Darab Bakshi</h1>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="hero-title">Creative Visual Storyteller</h1>
+                <p class="hero-subtitle">Crafting compelling narratives through cinematic films, brand collaborations, and fashion content</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm Darab Bakshi, a passionate creative professional specializing in visual storytelling through film and digital content. With extensive experience across wedding cinematography, brand collaborations, and fashion content creation, I bring a unique artistic vision to every project.</p>
+                        <p>My portfolio spans 37+ videos across diverse categories including cinematic wedding films, brand collaborations with VLCC and Kindlife, fashion week coverage, and creative personal projects.</p>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Details</h3>
+                        <p><strong>Phone:</strong> <a href="tel:8587885430">8587885430</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:darab.bakhshi@gmail.com">darab.bakhshi@gmail.com</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/darab.arz.hai/" target="_blank">@darab.arz.hai</a></p>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/darab-bakhshi-20443663/" target="_blank">LinkedIn Profile</a></p>
+                        <a href="https://docs.google.com/document/d/1-KZGJoOONVlzr2z5QRml01ro5AFnHLSrBJ2RKwDUKqg/edit?tab=t.0" target="_blank" class="btn btn-primary">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <p class="portfolio-subtitle">37 videos across specialized categories</p>
+                
+                <!-- Filter Tabs -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-category="all">All Work</button>
+                    <button class="filter-btn" data-category="weddings">Weddings</button>
+                    <button class="filter-btn" data-category="vlcc">VLCC</button>
+                    <button class="filter-btn" data-category="kindlife">Kindlife</button>
+                    <button class="filter-btn" data-category="fashion">Fashion Events</button>
+                    <button class="filter-btn" data-category="personal">Personal Projects</button>
+                    <button class="filter-btn" data-category="other">Other Work</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Content will be loaded by JavaScript -->
+                </div>
+                
+                <!-- Advertising Portfolio -->
+                <div class="advertising-section">
+                    <h3>Advertising Portfolio</h3>
+                    <p>Explore my comprehensive advertising and commercial work from previous years</p>
+                    <a href="https://dashboarddigital.wixsite.com/portfolio" target="_blank" class="btn btn-primary">View Advertising Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Let's Create Together</h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>Ready to bring your vision to life? I'd love to hear about your project and discuss how we can create something amazing together.</p>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Type</label>
+                            <select id="project" name="project">
+                                <option value="">Select project type...</option>
+                                <option value="wedding">Wedding Film</option>
+                                <option value="brand">Brand Collaboration</option>
+                                <option value="fashion">Fashion & Events</option>
+                                <option value="creative">Creative Project</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Darab Bakshi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
